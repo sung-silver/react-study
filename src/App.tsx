@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import TodoBoard from "./component/TodoBoard";
 
 // 1. 인풋창과 버튼이 있다
 // 2. 인풋창에 값을 입력하고 버튼을 클릭하면 아이템이 추가된다
@@ -19,6 +20,7 @@ function App() {
         onChange={(e) => setInputValue(e.target.value)}
       />
       <button onClick={addItem}>추가</button>
+      <TodoBoard />
     </main>
   );
 }

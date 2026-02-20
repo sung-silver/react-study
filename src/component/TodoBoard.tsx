@@ -1,7 +1,12 @@
+import TodoItem from "./TodoItem";
+
 function TodoBoard() {
   return (
     <div>
       <h1>Todo List</h1>
+      <TodoItem />
+      <TodoItem />
+      <TodoItem />
     </div>
   );
 }
