@@ -6,6 +6,11 @@ import "./App.css";
 // 3. 아이템 삭제 버튼을 누르면 삭제가 가능하다
 function App() {
   const [inputValue, setInputValue] = useState("");
+  const [todoList, setTodoList] = useState<string[]>([]);
+  const addItem = () => {
+    setTodoList([...todoList, inputValue]); // 기존에 있는 요소에 새로운 요소를 추가하는 방법
+    setInputValue("");
+  };
 
   return (
     <main>
@@ -13,7 +18,7 @@ function App() {
         value={inputValue}
         onChange={(e) => setInputValue(e.target.value)}
       />
-      <button>추가</button>
+      <button onClick={addItem}>추가</button>
     </main>
   );
 }
