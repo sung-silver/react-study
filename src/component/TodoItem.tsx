@@ -1,5 +1,5 @@
 function TodoItem() {
-  return <div>공부하기</div>;
+  return <div className="todo-item">공부하기</div>;
 }
 
 export default TodoItem;
