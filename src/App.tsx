@@ -20,7 +20,7 @@ function App() {
         onChange={(e) => setInputValue(e.target.value)}
       />
       <button onClick={addItem}>추가</button>
-      <TodoBoard />
+      <TodoBoard todoList={todoList} />
     </main>
   );
 }

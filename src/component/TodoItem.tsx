@@ -1,5 +1,5 @@
-function TodoItem() {
-  return <div className="todo-item">공부하기</div>;
+function TodoItem({ item }: { item: string }) {
+  return <div className="todo-item">{item}</div>;
 }
 
 export default TodoItem;

@@ -1,12 +1,12 @@
 import TodoItem from "./TodoItem";
 
-function TodoBoard() {
+function TodoBoard({ todoList }: { todoList: string[] }) {
   return (
     <div>
       <h1>Todo List</h1>
-      <TodoItem />
-      <TodoItem />
-      <TodoItem />
+      {todoList.map((item) => (
+        <TodoItem item={item} />
+      ))}
     </div>
   );
 }
