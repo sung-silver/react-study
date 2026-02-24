@@ -1,12 +1,6 @@
-import type { Todo } from "../types/type";
+import type { Todo } from "../type";
 
-function TodoItem({
-  item,
-  onDelete,
-}: {
-  item: Todo;
-  onDelete: () => void;
-}) {
+function TodoItem({ item, onDelete }: { item: Todo; onDelete: () => void }) {
   return (
     <div className="todo-item">
       <div>{item.text}</div>
