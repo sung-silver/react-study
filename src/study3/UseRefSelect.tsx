@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   const inputEl = useRef<HTMLInputElement>(null);
@@ -7,6 +8,7 @@ function App() {
     <div>
       <input type="text" ref={inputEl} />
       <button onClick={() => inputEl.current?.focus()}> 검색 </button>
+      <ScrollToTop />
     </div>
   );
 }
