@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./App.css";
+import "./TodoApp.css";
 import TodoBoard from "./component/TodoBoard";
 import type { Todo } from "./types/type";
 
